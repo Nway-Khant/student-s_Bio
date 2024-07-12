@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mytitle{
+    box-shadow: 0px 2px 4px #777;
+    padding: 1px;
+    border-radius: 7px;
+
+    /* &::before{
+        content: "";
+        border-left: 1px solid red;
+    } */
+
+    &::after{
+        content: "student bio";
+        color: orange;
+    }
+    margin: 20px;
+}
+
+.icom{
+    color: rgb(219, 219, 233);
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.aboutme{
+    position: relative;
+    border-left: 2px solid green;
+    padding-left: 20px;
+    margin: 20px;
+
+    &::before{
+
+    }
+
+    &::after{
+        content: " Hey, I am Nway KhantLorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam consequuntur aliquid asperiores accusantium nihil quo sequi adipisci mollitia quaerat exer"}
+
+        margin: 20px;
+}
+
+.pen{
+    position: absolute;
+    color: blue;
+    font-size: 24px;
+    left: -10px;
+    top: -5px;
+
+}
+
+.img{
+    --shape: 50% 0%, 100% 38%, 82% 100%,
+    18% 100, 0% 38%;
+    width: 100px;
+    /* height: 300px; */
+    clip-path: polygon(var(--shape));
+    background-color: goldenrod;
+    padding: 30px;
+    cursor: pointer;
+    margin-left: 25%;
+    
+}
