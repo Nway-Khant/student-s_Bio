@@ -57,12 +57,45 @@ body{
 .img{
     --shape: 50% 0%, 100% 38%, 82% 100%,
     18% 100, 0% 38%;
-    width: 100px;
-    /* height: 300px; */
+    width: 300px;
+    height: 300px;
     clip-path: polygon(var(--shape));
     background-color: goldenrod;
     padding: 30px;
     cursor: pointer;
     margin-left: 25%;
     
+}
+
+.con{
+    margin: 10px;
+    border: 1px solid #777;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 30px;
+    background-color: goldenrod;
+}
+
+.email{
+    box-shadow: 0px 1px 2px whitesmoke;
+    width: 100%;
+    padding: 7px;
+    background-color: gray;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    color: whitesmoke;
+
+    &:after{
+        content: "email:1234@com";
+        font-family: cursive;
+        padding-left: 10px;
+    }
+}
+
+.phone{
+
+}
+
+.github{
+
 }
